@@ -1,7 +1,7 @@
 Using terraform to provision a stack on AWS that runs a nginx image and expose it to Internet.
 The service is running in AWS ECS.
 
-**Architecture** as show in Architecture.pdf.
+**Architecture** as show in architecture.pdf.
 
 
 # Test scalability:
