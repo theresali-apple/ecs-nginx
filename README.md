@@ -1,5 +1,5 @@
-Using terraform to provision a stack on AWS that runs a nginx image and expose it to Internet.
-The service is running in AWS ECS.
+Using terraform to provision an ECS cluster on AWS that runs a nginx image and expose it to Internet.
+The cluster is managed by Fargate.
 
 **Architecture** as show in architecture.pdf.
 
@@ -20,7 +20,7 @@ Terraform state file is used by Terraform to map real-world resources to your co
 The benefit of store state file in S3 is that multiple team members can work together without having conflict and messing up the state file.
 
 # main.tf:
-main stack which calls all nested stacks.
+main set of configuration which calls all nested modules.
 
 # vpc module:
 Define the vpc and subnets where the infrastructure is built in.
